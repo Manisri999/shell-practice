@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PERSON1="Ramesh" #no space before or after the equal sign
-PERSON2="Suresh"
+PERSON1="trump" #no space before or after the equal sign
+PERSON2="putin"
 
 echo "${PERSON1}: Hello, ${PERSON2}! How are you?"
 echo "${PERSON2}: Hi, ${PERSON1}! I'm doing well. How about you?"
