@@ -11,3 +11,8 @@ FRUITS=("apple" "banana" "cherry")
 
 echo "Fruits are: ${FRUITS[@]}"
 echo "First fruit: ${FRUITS[0]}"
+echo "Second fruit: ${FRUITS[1]}"
+echo "Third fruit: ${FRUITS[2]}"
+echo "Number of fruits: ${#FRUITS[@]}"
+echo "All fruits: ${FRUITS[*]}"
+echo "All fruits (using @): ${FRUITS[@]}"
