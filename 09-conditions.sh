@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUMBER=25
+NUMBER=$1
 
 if [ $NUMBER -gt 20 ]; then
     echo "The number is greater than 20."
