@@ -25,6 +25,12 @@ VALIDATE() {
 }
 
 
+
+#The main purpose of this code is:
+
+#Check whether each package is already installed. If it is installed, skip it. 
+#Otherwise, install it and validate the installation.
+
 for package in $@ #sudo sh 14-loops.sh nginx mysql nodejs
 do
     dnf list installed $package &>>$LOGS_FILE
@@ -35,6 +41,12 @@ do
     else
         echo "$package is already installed."
     fi
-        
+
 
 done
+
+#$@ represents all arguments passed to the script.
+
+#Check whether the package is already installed
+#dnf list installed $package &>>$LOGS_FILE
+
