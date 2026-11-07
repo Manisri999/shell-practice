@@ -17,10 +17,10 @@ mkdir -p $LOGS_FOLDER
 VALIDATE() {
 
     if [ $1 -ne 0 ]; then
-        echo "$2 installation failed."
+        echo "$2 installation failed." | tee -a $LOGS_FILE
         exit 1
     else
-        echo "$2 installed successfully."
+        echo "$2 installed successfully." | tee -a $LOGS_FILE
     fi
 }
 
